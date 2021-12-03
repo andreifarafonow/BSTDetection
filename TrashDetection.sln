@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrashDetection", "WebApplication1\TrashDetection.csproj", "{5EE24FED-5A1E-49B2-B411-8CB6E123E57C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5EE24FED-5A1E-49B2-B411-8CB6E123E57C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EE24FED-5A1E-49B2-B411-8CB6E123E57C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EE24FED-5A1E-49B2-B411-8CB6E123E57C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EE24FED-5A1E-49B2-B411-8CB6E123E57C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {03E1C3ED-59DF-4E36-9FE5-C3640BAE9110}
+	EndGlobalSection
+EndGlobal

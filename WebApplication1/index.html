@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=26c63123-d879-4a26-9556-dd37753c5531"
+    type="text/javascript"></script>
+<link href="main.css" rel="stylesheet"></head>
+
+<body>
+  <section id="auth" class="auth">
+    <form id="authForm" class="auth__form">
+      <div class="auth__row">
+        <input type="text" class="auth__input" placeholder="Логин" autocomplete="off">
+      </div>
+      <div class="auth__row">
+        <input type="password" class="auth__input" placeholder="Пароль" autocomplete="off">
+      </div>
+      <div class="auth__row">
+        <button class="button auth__button">Войти</button>
+      </div>
+    </form>
+  </section>
+  <section id="desktop" class="hide">
+    <header class="header">
+      <div id="logo" class="header__logo">Logo</div>
+      <h1 class="header__title">Главная</h1>
+      <div class="header__user user">
+        <div class="user__info">
+          <p id="userName" class="user__name">Имя фамилия</p>
+          <p id="userRank" class="user__rank">Должность</p>
+        </div>
+        <div id="userAvatar" class="user__avatar icon"></div>
+      </div>
+    </header>
+    <aside class="aside" id="aside">
+      <nav class="aside__menu menu">
+
+      </nav>
+      <button class="menu__hide"></button>
+    </aside>
+    <main class="main">
+      <div id="operator" class="operator hide">
+        <div id="operatorMap" class="map operator__map"></div>
+        <div id="operatorSidebarCams" class="operator__sidebar sidebar hide">
+          <div class="sidebar__header">
+            <div class="sidebar__tabs">
+              <button class="sidebar__tab sidebar__tab--active" data-click="wait">В ожидании</button>
+              <button class="sidebar__tab" data-click="work">В работе</button>
+            </div>
+          </div>
+          <div class="sidebar__main">
+            <ul class="sidebar__list"></ul>
+          </div>
+          <div class="sidebar__footer">
+            <div class="sidebar__footer-tabs">
+              <button class="sidebar__footer-tab sidebar__footer-tab--active icon icon-point-white"></button>
+              <button class="sidebar__footer-tab icon icon-car-white"></button>
+              <button class="sidebar__footer-tab icon icon-settings-white"></button>
+            </div>
+          </div>
+        </div>
+        <div id="operatorSidebarConfirm" class="operator__sidebar sidebar hide">
+          <div class="sidebar__header">
+            <button class="sidebar__header-back icon icon-keyboard-arrow-left-white" data-click="openCams"></button>
+          </div>
+          <div class="sidebar__main">
+            <div class="sidebar__confirm confirm"></div>
+            <ul class="sidebar__list"></ul>
+          </div>
+          <div class="sidebar__footer">
+            <div class="sidebar__footer-tabs">
+              <button class="sidebar__footer-tab sidebar__footer-tab--active icon icon-point-white"></button>
+              <button class="sidebar__footer-tab icon icon-car-white"></button>
+              <button class="sidebar__footer-tab icon icon-settings-white"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </section>
+  <section id="mobile" class="hide">
+    <div id="employeeSidebar" class="mobile__sidebar sidebar">
+      <div class="sidebar__header-mob header-mob">
+        <button class="icon icon-phone header-mob__button"></button>
+        <button class=" header-mob__button header-mob__avatar"></button>
+      </div>
+      <div class="sidebar__main-mob main-mob">
+        <div id="employeeMap" class="main-mob__map map"></div>
+        <div id="getTask" class="main-mob__panel hide">
+          <h2 class="main-mob__title">780 м • 2 мин</h2>
+          <div class="main-mob__stat stat">
+            <div class="stat__item">
+              <div class="stat__icon icon icon-point"></div>
+              <span class="stat__counter">1/5</span>
+            </div>
+            <div class="stat__item">
+              <div class="stat__icon icon icon-car"></div>
+              <span class="stat__counter">60%</span>
+            </div>
+          </div>
+          <p class="main-mob__adress">Альметьевск; Белоглазова 131; ТКО</p>
+          <button class="main-mob__button">Принять</button>
+        </div>
+        <div id="getTask" class="main-mob__panel">
+          <div class="main-mob__route route">
+            <h3 class="route__title">780 м • 2 мин</h3>
+            <div class="route__line icon icon-route"></div>
+          </div>
+          <div class="main-mob__stat stat">
+            <div class="stat__item">
+              <div class="stat__icon icon icon-point"></div>
+              <span class="stat__counter">3/5</span>
+            </div>
+            <div class="stat__item">
+              <div class="stat__icon icon icon-car"></div>
+              <span class="stat__counter">60%</span>
+            </div>
+          </div>
+          <ul class="main-mob__list">
+            <li class="main-mob__item">Альметьевск; Белоглазова 131; ТКО <button class="main-mob__item-button"></button>
+            </li>
+            <li class="main-mob__item">Альметьевск; Белоглазова 131; ТКО <button class="main-mob__item-button"></button>
+            </li>
+            <li class="main-mob__item">Альметьевск; Белоглазова 131; ТКО <button class="main-mob__item-button"></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="sidebar__footer sidebar__footer-mob">
+        <div class="sidebar__footer-tabs">
+          <button class="sidebar__footer-tab sidebar__footer-tab--active icon icon-point-white"></button>
+          <button class="sidebar__footer-tab icon icon-car-white"></button>
+          <button class="sidebar__footer-tab icon icon-settings-white"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+<script defer src="bundle.js"></script></body>
+
+</html>
